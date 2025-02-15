@@ -1,0 +1,11 @@
+services:
+  epub-converter:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ./epub:/app/epub
+      - ./audio_book:/app/audio_book
+      - ./txt_book:/app/txt_book
+    environment:
+      - TZ=Asia/Shanghai 

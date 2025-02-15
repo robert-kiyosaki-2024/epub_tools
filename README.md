@@ -43,6 +43,18 @@ epub-audiobook-generator/
 .\epub2txt.ps1
 ```
 
+### 使用Docker
+```bash
+docker run -v $(pwd)/epub:/app/epub -v $(pwd)/audio_book:/app/audio_book -v $(pwd)/txt_book:/app/txt_book epub-converter text # 转换为文本
+docker run -v $(pwd)/epub:/app/epub -v $(pwd)/audio_book:/app/audio_book -v $(pwd)/txt_book:/app/txt_book epub-converter audio # 转换为音频
+``` 
+
+### 使用Docker Compose
+```bash
+docker-compose run --rm epub-converter text   # 转换为文本
+docker-compose run --rm epub-converter audio  # 转换为音频
+``` 
+
 ## 输出说明
 - 有声书输出位置：.\audio_book\书名\001.mp3
 - 文本文件输出位置：.\txt_book\书名\001.txt

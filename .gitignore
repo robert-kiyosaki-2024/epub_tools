@@ -19,6 +19,7 @@ __pycache__/
 # 项目输出文件
 *.mp3
 *.txt
+!requirements.txt   # 排除 requirements.txt
 audio_book/
 txt_book/
 
