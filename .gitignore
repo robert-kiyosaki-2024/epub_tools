@@ -1,0 +1,42 @@
+# Python虚拟环境
+venv/
+env/
+.env/
+
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# 项目输出文件
+*.mp3
+*.txt
+audio_book/
+txt_book/
+
+# 源文件
+epub/
+*.epub
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+temp/
+tmp/
+.temp/
+.tmp/
+
+# 构建文件
+build/
+dist/
+*.egg-info/ 
